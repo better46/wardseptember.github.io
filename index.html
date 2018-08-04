@@ -156,83 +156,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-各种排序算法比较" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/01/各种排序算法比较/">各种排序算法比较</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/01/各种排序算法比较/" class="archive-article-date">
-  	<time datetime="2018-08-01T11:21:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#排序算法的稳定性和源码</p>
-<p>##稳定性：<br>所谓稳定性是指当待排序列中有两个或两个以上相同的关键字时，排序前和排序后这些关键字的相对位置，如果没有发生变化就是稳定的，否则就是不稳定的。<br>如果关键字不能重复，则排序结果是唯一的，那么选择的排序算法稳定与否就无关紧要；如果关键字可以重复，则在选择排序算法是，就要根据具体的需求来考虑选择稳定的还是不稳定的排序算法。<br>| 排序方式 | 源码链接| 稳定性 |<br>
-        
-          <a class="article-more-a" href="/2018/08/01/各种排序算法比较/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data_structure</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/01/各种排序算法比较/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-念奴娇-赤壁怀古" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -312,27 +235,34 @@
 
 
   
-    <article id="post-hello-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-冒泡排序————python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/01/hello-hexo/">hello hexo</a>
+      <a class="article-title" href="/2018/08/01/冒泡排序————python/">念奴娇 赤壁怀古</a>
     </h1>
   
 
         
-        <a href="/2018/08/01/hello-hexo/" class="archive-article-date">
-  	<time datetime="2018-08-01T05:24:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
+        <a href="/2018/08/01/冒泡排序————python/" class="archive-article-date">
+  	<time datetime="2018-08-01T06:33:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>刚搭建完，来试一把</p>
+        <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">from __future__ import print_function  #在Python2环境下print必须按照python3方式书写，如print("good")</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def bubble_sort(collection):</span><br><span class="line">    """</span><br><span class="line">    完全用python实现冒泡排序</span><br><span class="line">    得到升序的结果</span><br><span class="line">    算法思想：</span><br><span class="line">        依次比较相邻元素的大小，大的元素后移，直到移到最后一个位置（length-1）,第一趟排序完成；</span><br><span class="line">    <span class="attribute">Examples:</span></span><br><span class="line">    &gt;&gt;&gt; bubble_sort([0, 5, 3, 2, 2])</span><br><span class="line">    [0, 2, 2, 3, 5]</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; bubble_sort([])</span><br><span class="line">    []</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; bubble_sort([-2, -5, -45])</span><br><span class="line">    [-45, -5, -2]</span><br><span class="line">    """</span><br><span class="line">    length = len(collection)</span><br><span class="line">    for i in range(length):</span><br><span class="line">        swapped = False   #哨兵，如果没有发生交换就跳出循环</span><br><span class="line">        for j in range(length-1):</span><br><span class="line">            if collection[j] &gt; collection[j+1]:</span><br><span class="line">                swapped = True</span><br><span class="line">                collection[j], collection[j+1] = collection[j+1], collection[j]</span><br><span class="line">        if not swapped: break  # 跳出循环，已经完成排序过程</span><br><span class="line">    return collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == '__main__':</span><br><span class="line">    <span class="attribute">try:</span></span><br><span class="line">        raw_input          # Python 2</span><br><span class="line">    except NameError:</span><br><span class="line">        raw_input = input  # Python 3</span><br><span class="line"></span><br><span class="line">    user_input = raw_input('输入待排序的数，用\",\"分隔:\n').strip()#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span><br><span class="line">    unsorted = [int(item) for item in user_input.split(',')]</span><br><span class="line">    <span class="attribute">print(bubble_sort(unsorted))</span></span><br></pre></td></tr></table></figure>
+<h2 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h2><ul>
+<li>我的<a href="https://github.com/wardseptember/The_Algorithms_in_python" target="_blank" rel="noopener">github项目</a>上有完整的算法代码，欢迎star,fork.</li>
+<li>这里的所有算法均用python实现，“翻译”自<a href="https://github.com/TheAlgorithms/Python" target="_blank" rel="noopener">国外某牛人的项目</a>。</li>
+<li>这里的“翻译”不单单指的是英译中，而且是为每个算法添加上算法思想描述和关键代码注释。</li>
+<li>为什么要“翻译”这个项目？一方面是我想系统地学习下如何用python实现各种算法，另一方面是边学习边做笔记，通过这个项目记录自己的学习过程，再者，原项目经过“翻译”后，更容易被中国人理解，为想学习python的朋友提供一个不错的算法参考。</li>
+<li>这里的算法很多，而且有些算法比较复杂，工作量很大。如果一些朋友有空闲时间，也可以参与翻译，十分欢迎。</li>
+</ul>
 
       
 
@@ -341,11 +271,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/01/hello-hexo/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/08/01/冒泡排序————python/">展开全文 >></a>
         </p>
       
 
@@ -539,6 +480,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">python算法</a>
               </li>
             
             <div class="clearfix"></div>
