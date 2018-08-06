@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/8 | wardseptember&#39;s blog</title>
+  <title>圈排序——python | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wardseptember&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/08/index.html">
+  <meta name="description" content="所谓的圈的定义,我只能想到用例子来说明,实在不好描述 待排数组[ 6 2 4 1 5 9 ] 排完序后[ 1 2 4 5 6 9 ] 数组索引[ 0 1 2 3 4 5 ] 第一部分 第一步,我们现在来观察待排数组和排完后的结果,以及待排数组的索引,可以发现 排完序后的6应该出现在索引4的位置上,而它现在却在位置0上, 记住这个位置啊,一直找到某个数应该待在位置0上我们的任务就完成了 待排数组[">
+<meta name="keywords" content="python算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="圈排序——python">
+<meta property="og:url" content="http://yoursite.com/2018/08/06/圈排序——python/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
+<meta property="og:description" content="所谓的圈的定义,我只能想到用例子来说明,实在不好描述 待排数组[ 6 2 4 1 5 9 ] 排完序后[ 1 2 4 5 6 9 ] 数组索引[ 0 1 2 3 4 5 ] 第一部分 第一步,我们现在来观察待排数组和排完后的结果,以及待排数组的索引,可以发现 排完序后的6应该出现在索引4的位置上,而它现在却在位置0上, 记住这个位置啊,一直找到某个数应该待在位置0上我们的任务就完成了 待排数组[">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-06T14:11:07.660Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wardseptember&#39;s blog">
+<meta name="twitter:title" content="圈排序——python">
+<meta name="twitter:description" content="所谓的圈的定义,我只能想到用例子来说明,实在不好描述 待排数组[ 6 2 4 1 5 9 ] 排完序后[ 1 2 4 5 6 9 ] 数组索引[ 0 1 2 3 4 5 ] 第一部分 第一步,我们现在来观察待排数组和排完后的结果,以及待排数组的索引,可以发现 排完序后的6应该出现在索引4的位置上,而它现在却在位置0上, 记住这个位置啊,一直找到某个数应该待在位置0上我们的任务就完成了 待排数组[">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -151,36 +156,148 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-圈排序——python" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      圈排序——python
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/圈排序——python/" class="archive-article-date">
+
+        
+        <a href="/2018/08/06/圈排序——python/" class="archive-article-date">
   	<time datetime="2018-08-06T14:06:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/圈排序——python/">圈排序——python</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	  
+		<div style="margin-bottom:15px;margin-top:15px;">
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=80 src="//music.163.com/outchain/player?type=2&id=449577226&auto=1&height=66"></iframe>
+		</div>
+	  
+      
+        <p>所谓的圈的定义,我只能想到用例子来说明,实在不好描述</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>第一部分</p>
+<p>第一步,我们现在来观察待排数组和排完后的结果,以及待排数组的索引,可以发现</p>
+<p>排完序后的6应该出现在索引4的位置上,而它现在却在位置0上,</p>
+<p>记住这个位置啊,一直找到某个数应该待在位置0上我们的任务就完成了</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>第二步,而待排数组索引4位置上的5应该出现在索引3的位置上</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]<br><a id="more"></a></p>
+<p>第三步,同样的,待排数组索引3的位置是1,1应该出现在位置0上,注意注意,找到这么一个数了:1,它应该待在位置0上</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>第四步,而索引0处却放着6,而6应该出现在索引4的位置,至此可以发现,回到原点了,问题回到第一步了,</p>
+<p>所以这里并不存在所谓的第四步,前三步就已经转完一圈了</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>这就是所谓的一圈!真不好描述,不知道您看明白没…汗.</p>
+<p>前三步转完一圈,得到的数据分别是[ 6 5 1 ]</p>
+<p>第二部分</p>
+<p>第一步,圈排序并不是一圈排序,而一圈或多圈排序,所以,还得继续找,这一步从第二个数字2处开始转圈</p>
+<p>待排中的2位于索引1处,排序完毕仍然处于位置1位置,所以这一圈完毕,得到圈数据[ 2 ]</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>第三部分</p>
+<p>第一步,同上,4也出现了它应该待的位置,结束这一圈,得到第三个圈:[ 4 ]</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>第四部分</p>
+<p>第一步,由于1和5出现在第一圈里,这是什么意思呢,说明这两个数已经有自己的圈子了,不用再找了,</p>
+<p>即是找,最后还是得到第一圈的数据[ 6 5 1 ],所以,1和5跳过,这一部分实际应该找的是9,来看看9的圈子</p>
+<p>9应该出现在索引5的位置,实际上它就在索引5的位置,与第二部分的第一步的情况一样,所以这一圈的数据也出来了:[ 9 ]</p>
+<p>待排数组[ 6 2 4 1 5 9 ]</p>
+<p>排完序后[ 1 2 4 5 6 9 ]</p>
+<p>数组索引[ 0 1 2 3 4 5 ]</p>
+<p>一共找到四个圈子,分别是</p>
+<p>[ 6 5 1 ] , [ 2 ] ,[ 4 ] , [ 9 ]</p>
+<p>如果一个圈只有一个数字,那么它是不需要转圈的,即不需要排序,那么只有第一个圈排序即可</p>
+<p>你可能要问了,前边的那些圈子都是基于已知排序结果才能得到,我都已知结果还排个毛啊</p>
+<p>以上内容都是为了说明什么是圈,知道什么是圈后才能很好的理解圈排序</p>
+<p>现在来分解排序的细节</p>
+<p>第一步,将6取出来,计算出有4个数字比6小,将6放入索引4,同时原索引4位置的数字5出列</p>
+<p>排序之前[ 0 2 4 1 5 9 ] 6</p>
+<p>排序之后[ 0 2 4 1 6 9 ] 5</p>
+<p>索引位置[ 0 1 2 3 4 5 ]</p>
+<p>第二步,当前数字5,计算出有3个数字比5小,将5放入索引3,同时原索引3位置的数字</p>
+<p>排序之前[ 0 2 4 1 6 9 ] 5</p>
+<p>排序之后[ 0 2 4 5 6 9 ] 1</p>
+<p>索引位置[ 0 1 2 3 4 5 ]</p>
+<p>第三步,当前数字1,计算出有0个数字比1小,将1放入索引0,索引0处为空,这圈完毕</p>
+<p>排序之前[ 0 2 4 5 6 9 ] 1</p>
+<p>排序之后[ 1 2 4 5 6 9 ]</p>
+<p>索引位置[ 0 1 2 3 4 5 ]</p>
+<p>第一个圈[ 6 5 1 ]完毕</p>
+<p>第四步,取出下一个数字2,计算出有1个数字比2小,将2放入索引1处,发现它本来就在索引1处</p>
+<p>第五步,取出下一个数字4,计算出有2个数字比4小,将4放入索引2处,发现它本来就在索引2处</p>
+<p>第六步,取出下一个数字5,5在第一个圈内,不必排序</p>
+<p>第七步,取出下一个数字6,6在第一个圈内,不必排序</p>
+<p>第八步,取出下一个数字9,计算出有5个数字比9小,将9放入索引5处,发现它本来就在索引5处</p>
+<p>全部排序完毕<br>以上算法讲解来自<a href="https://www.cnblogs.com/kkun/archive/2011/11/28/2266559.html" target="_blank" rel="noopener">kkun</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cycle_sort</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    圈排序（不稳定排序）</span></span><br><span class="line"><span class="string">    默认升序</span></span><br><span class="line"><span class="string">    计数排序是另开辟空间存放排序结果，圈排序是不开辟空间，直接进行组内交换</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    ans = <span class="number">0</span>   <span class="comment">#记录发生交换的次数，不用在意，无关紧要，可删</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#外层循环处理列表中的每一个圈，一次遍历出现一个圈</span></span><br><span class="line">    <span class="keyword">for</span> cycleStart <span class="keyword">in</span> range(<span class="number">0</span>, len(array) - <span class="number">1</span>):</span><br><span class="line">        item = array[cycleStart]   <span class="comment">#取出待排序的元素，item一直记录一圈的元素</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 找到item应该放的位置，跟计数排序相似，统计列表中有多少个元素比item小</span></span><br><span class="line">        pos = cycleStart <span class="comment">#记录位置</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(cycleStart + <span class="number">1</span>, len(array)):</span><br><span class="line">            <span class="keyword">if</span> array[i] &lt; item:</span><br><span class="line">                pos += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># item也存在圈但这个圈只有它自己，表示item已经归位，不用改变</span></span><br><span class="line">        <span class="keyword">if</span> pos == cycleStart:</span><br><span class="line">            <span class="keyword">continue</span>  <span class="comment">#跳过本次循环继续下次循环</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 这四行代码是处理列表中相同的元素</span></span><br><span class="line">        <span class="keyword">while</span> item == array[pos]:<span class="comment">#如果相同，就直接放在pos的后一个位置</span></span><br><span class="line">            pos += <span class="number">1</span></span><br><span class="line">        array[pos], item = item, array[pos]<span class="comment">#item最终归位，并把item赋新值</span></span><br><span class="line">        ans += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">#处理新的item</span></span><br><span class="line">        <span class="keyword">while</span> pos != cycleStart:<span class="comment">#pos=cycleStart就代表又回到了起点，表示已有元素归到</span></span><br><span class="line">                                <span class="comment">#cycleStart位置上，一圈处理完毕</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 以下代码跟上面思路一样</span></span><br><span class="line">            pos = cycleStart</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(cycleStart + <span class="number">1</span>, len(array)):</span><br><span class="line">                <span class="keyword">if</span> array[i] &lt; item:</span><br><span class="line">                    pos += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> item == array[pos]:</span><br><span class="line">                pos += <span class="number">1</span></span><br><span class="line">            array[pos], item = item, array[pos]</span><br><span class="line">            ans += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line">        </span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    n = len(unsorted)</span><br><span class="line">    cycle_sort(unsorted)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"排序后 : "</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, n):</span><br><span class="line">        print(unsorted[i], end=<span class="string">' '</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h2><ul>
+<li>我的<a href="https://github.com/wardseptember/The_Algorithms_in_python" target="_blank" rel="noopener">github项目</a>上有完整的算法代码，欢迎star,fork.</li>
+<li>这里的所有算法均用python实现，“翻译”自<a href="https://github.com/TheAlgorithms/Python" target="_blank" rel="noopener">国外某程序员的项目</a>。</li>
+<li>这里的“翻译”不单单指的是英译中，而且是为每个算法添加上算法思想描述和关键代码注释。</li>
+<li>为什么要“翻译”这个项目？一方面是我想系统地学习下如何用python实现各种算法，另一方面是边学习边做笔记，通过这个项目记录自己的学习过程，再者，原项目经过“翻译”后，更容易被中国人理解，为想学习python的朋友提供一个不错的算法参考。</li>
+<li>这里的算法很多，而且有些算法比较复杂，工作量很大。如果一些朋友有空闲时间，也可以参与翻译，十分欢迎。</li>
+<li>另外我的<a href="https://blog.csdn.net/wardseptember" target="_blank" rel="noopener">CSDN博客</a>也同步更新,值得去看一看。</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aiply.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -192,285 +309,91 @@
 		</ul>
 	</div>
 
-          
+	  
+		<span class="archive-article-date">
+			浏览量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	  
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/地精排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-06T03:56:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/06/地精排序-python/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">地精排序--python</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/地精排序-python/">地精排序--python</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一些说明："><span class="toc-number">1.</span> <span class="toc-text">一些说明：</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/CS排序-python-冒泡排序改版/" class="archive-article-date">
-  	<time datetime="2018-08-05T15:30:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/CS排序-python-冒泡排序改版/">CS排序--python(冒泡排序改版)</a>
-    </h1>
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/bogo排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-05T12:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/bogo排序——python/">bogo排序——python</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/计数排序——python-稳定版算法/" class="archive-article-date">
-  	<time datetime="2018-08-05T11:56:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/计数排序——python-稳定版算法/">计数排序——python(稳定版算法)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/联系方式/" class="archive-article-date">
-  	<time datetime="2018-08-05T04:40:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2018/08/06/圈排序——python/",
+  owner: 'wardseptember',
+  repo: 'wardseptember.github.io',
+  oauth: {
+    client_id: 'cd04f15359635cf78db1',
+    client_secret: '0d9d7a78ef75c9188bc97b34f8d9364d3a52ce04',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/联系方式/">联系方式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/04/冒泡排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-04T01:50:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/04/冒泡排序——python/">冒泡排序——python</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/01/念奴娇-赤壁怀古/" class="archive-article-date">
-  	<time datetime="2018-08-01T06:33:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/01/念奴娇-赤壁怀古/">念奴娇 赤壁怀古</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -501,8 +424,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
