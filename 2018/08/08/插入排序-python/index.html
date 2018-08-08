@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: python算法 | wardseptember&#39;s blog</title>
+  <title>插入排序--python | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wardseptember&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/tags/python算法/index.html">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
+<meta name="keywords" content="python算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="插入排序--python">
+<meta property="og:url" content="http://yoursite.com/2018/08/08/插入排序-python/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-08T14:00:48.229Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wardseptember&#39;s blog">
+<meta name="twitter:title" content="插入排序--python">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -157,36 +162,80 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-插入排序-python" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      插入排序--python
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/08/插入排序-python/" class="archive-article-date">
+
+        
+        <a href="/2018/08/08/插入排序-python/" class="archive-article-date">
   	<time datetime="2018-08-08T13:58:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/08/插入排序-python/">插入排序--python</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	  
+		<div style="margin-bottom:15px;margin-top:15px;">
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=80 src="//music.163.com/outchain/player?type=2&id=449577226&auto=1&height=66"></iframe>
+		</div>
+	  
+      
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    插入排序</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    初始时，只考虑数组下标0处的元素，只有一个元素，显然是有序的。</span></span><br><span class="line"><span class="string">    然后第一趟 对下标 1 处的元素进行排序，保证数组[0,1]上的元素有序；</span></span><br><span class="line"><span class="string">    第二趟 对下标 2 处的元素进行排序，保证数组[0,2]上的元素有序；</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    第N-1趟对下标 N-1 处的元素进行排序，保证数组[0,N-1]上的元素有序，也就是整个数组有序了。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>, len(collection)):</span><br><span class="line">        <span class="keyword">while</span> <span class="number">0</span> &lt; index <span class="keyword">and</span> collection[index] &lt; collection[index - <span class="number">1</span>]:</span><br><span class="line">            collection[index], collection[</span><br><span class="line">                index - <span class="number">1</span>] = collection[index - <span class="number">1</span>], collection[index]</span><br><span class="line">            index -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(insertion_sort(unsorted))</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h2><ul>
+<li>我的<a href="https://github.com/wardseptember/The_Algorithms_in_python" target="_blank" rel="noopener">github项目</a>上有完整的算法代码，欢迎star,fork.</li>
+<li>这里的所有算法均用python实现，“翻译”自<a href="https://github.com/TheAlgorithms/Python" target="_blank" rel="noopener">国外某程序员的项目</a>。</li>
+<li>这里的“翻译”不单单指的是英译中，而且是为每个算法添加上算法思想描述和关键代码注释。</li>
+<li>为什么要“翻译”这个项目？一方面是我想系统地学习下如何用python实现各种算法，另一方面是边学习边做笔记，通过这个项目记录自己的学习过程，再者，原项目经过“翻译”后，更容易被中国人理解，为想学习python的朋友提供一个不错的算法参考。</li>
+<li>这里的算法很多，而且有些算法比较复杂，工作量很大。如果一些朋友有空闲时间，也可以参与翻译，十分欢迎。</li>
+<li>另外我的<a href="https://blog.csdn.net/wardseptember" target="_blank" rel="noopener">CSDN博客</a>也同步更新,值得去看一看。</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aiply.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,247 +247,91 @@
 		</ul>
 	</div>
 
-          
+	  
+		<span class="archive-article-date">
+			浏览量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	  
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/圈排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-06T14:06:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/06/圈排序——python/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">圈排序——python</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/圈排序——python/">圈排序——python</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一些说明："><span class="toc-number">1.</span> <span class="toc-text">一些说明：</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/地精排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-06T03:56:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/地精排序-python/">地精排序--python</a>
-    </h1>
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/CS排序-python-冒泡排序改版/" class="archive-article-date">
-  	<time datetime="2018-08-05T15:30:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/CS排序-python-冒泡排序改版/">CS排序--python(冒泡排序改版)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/bogo排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-05T12:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/bogo排序——python/">bogo排序——python</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/计数排序——python-稳定版算法/" class="archive-article-date">
-  	<time datetime="2018-08-05T11:56:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2018/08/08/插入排序-python/",
+  owner: 'wardseptember',
+  repo: 'wardseptember.github.io',
+  oauth: {
+    client_id: 'cd04f15359635cf78db1',
+    client_secret: '0d9d7a78ef75c9188bc97b34f8d9364d3a52ce04',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/计数排序——python-稳定版算法/">计数排序——python(稳定版算法)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/04/冒泡排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-04T01:50:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/04/冒泡排序——python/">冒泡排序——python</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -469,9 +362,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
