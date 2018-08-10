@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>插入排序--python | wardseptember&#39;s blog</title>
+  <title>堆排序--python | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061from __future__ import print_function#调整堆的函数，此为大顶堆def heapify(unsorted, index, heap_siz">
 <meta name="keywords" content="python算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="插入排序--python">
-<meta property="og:url" content="http://yoursite.com/2018/08/08/插入排序-python/index.html">
+<meta property="og:title" content="堆排序--python">
+<meta property="og:url" content="http://yoursite.com/2018/08/10/堆排序-python/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061from __future__ import print_function#调整堆的函数，此为大顶堆def heapify(unsorted, index, heap_siz">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-08T14:00:48.229Z">
+<meta property="og:updated_time" content="2018-08-10T15:11:54.560Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="插入排序--python">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344from __future__ import print_functiondef insertion_sort(collection):    &quot;&quot;&quot;    插入排序    算法思想：    初始时，只考虑数组下标0处的元素，只有一个元素，显">
+<meta name="twitter:title" content="堆排序--python">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061from __future__ import print_function#调整堆的函数，此为大顶堆def heapify(unsorted, index, heap_siz">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -162,20 +162,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-插入排序-python" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-堆排序-python" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      插入排序--python
+      堆排序--python
     </h1>
   
 
         
-        <a href="/2018/08/08/插入排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-08T13:58:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
+        <a href="/2018/08/10/堆排序-python/" class="archive-article-date">
+  	<time datetime="2018-08-10T15:11:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-10</time>
 </a>
         
       </header>
@@ -187,7 +187,7 @@
 		</div>
 	  
       
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    插入排序</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    初始时，只考虑数组下标0处的元素，只有一个元素，显然是有序的。</span></span><br><span class="line"><span class="string">    然后第一趟 对下标 1 处的元素进行排序，保证数组[0,1]上的元素有序；</span></span><br><span class="line"><span class="string">    第二趟 对下标 2 处的元素进行排序，保证数组[0,2]上的元素有序；</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    第N-1趟对下标 N-1 处的元素进行排序，保证数组[0,N-1]上的元素有序，也就是整个数组有序了。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>, len(collection)):</span><br><span class="line">        <span class="keyword">while</span> <span class="number">0</span> &lt; index <span class="keyword">and</span> collection[index] &lt; collection[index - <span class="number">1</span>]:</span><br><span class="line">            collection[index], collection[</span><br><span class="line">                index - <span class="number">1</span>] = collection[index - <span class="number">1</span>], collection[index]</span><br><span class="line">            index -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(insertion_sort(unsorted))</span><br></pre></td></tr></table></figure>
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="comment">#调整堆的函数，此为大顶堆</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heapify</span><span class="params">(unsorted, index, heap_size)</span>:</span></span><br><span class="line">    largest = index <span class="comment">#父结点</span></span><br><span class="line">    left_index = <span class="number">2</span> * index + <span class="number">1</span>  <span class="comment">#左孩子</span></span><br><span class="line">    right_index = <span class="number">2</span> * index + <span class="number">2</span> <span class="comment">#右孩子</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">#下面两个If实现largest为三者中的最大值</span></span><br><span class="line">    <span class="keyword">if</span> left_index &lt; heap_size <span class="keyword">and</span> unsorted[left_index] &gt; unsorted[largest]:</span><br><span class="line">        largest = left_index</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> right_index &lt; heap_size <span class="keyword">and</span> unsorted[right_index] &gt; unsorted[largest]:</span><br><span class="line">        largest = right_index</span><br><span class="line"></span><br><span class="line">    <span class="comment">#找到三者中最大值，进行交换</span></span><br><span class="line">    <span class="keyword">if</span> largest != index:</span><br><span class="line">        unsorted[largest], unsorted[index] = unsorted[index], unsorted[largest]</span><br><span class="line">        heapify(unsorted, largest, heap_size)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heap_sort</span><span class="params">(unsorted)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    堆排序（不稳定排序）</span></span><br><span class="line"><span class="string">    #算法详细讲解见https://www.cnblogs.com/chengxiao/p/6129630.html</span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    n = len(unsorted)</span><br><span class="line">    <span class="comment">#第一次建立大顶堆</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n // <span class="number">2</span> - <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-1</span>):</span><br><span class="line">        <span class="comment">#从第一个非叶子结点从下至上，从右至左调整结构</span></span><br><span class="line">        heapify(unsorted, i, n)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#交换堆顶元素与末尾元素+调整堆结构</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n - <span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">        <span class="comment">#将堆顶元素与末尾元素进行交换</span></span><br><span class="line">        unsorted[<span class="number">0</span>], unsorted[i] = unsorted[i], unsorted[<span class="number">0</span>]</span><br><span class="line">        <span class="comment">#重新对堆进行调整</span></span><br><span class="line">        heapify(unsorted, <span class="number">0</span>, i)</span><br><span class="line">    <span class="keyword">return</span> unsorted</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(heap_sort(unsorted))</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h2><ul>
 <li>我的<a href="https://github.com/wardseptember/The_Algorithms_in_python" target="_blank" rel="noopener">github项目</a>上有完整的算法代码，欢迎star,fork.</li>
@@ -265,18 +265,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/10/堆排序-python/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          堆排序--python
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/08/06/圈排序——python/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">圈排序——python</div>
+    <a href="/2018/08/08/插入排序-python/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">插入排序--python</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -330,7 +321,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2018/08/08/插入排序-python/",
+  id: "http://yoursite.com/2018/08/10/堆排序-python/",
   owner: 'wardseptember',
   repo: 'wardseptember.github.io',
   oauth: {
