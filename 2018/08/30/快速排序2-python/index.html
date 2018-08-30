@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>wardseptember&#39;s blog</title>
+  <title>快速排序2--python | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wardseptember&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647from __future__ import print_functiondef quick_sort(ARRAY):    &quot;&quot;&quot;    快速排序：不稳定，    算法思想：    首先在要排序的序列 a 中选取一个中轴值，而后">
+<meta name="keywords" content="python算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="快速排序2--python">
+<meta property="og:url" content="http://yoursite.com/2018/08/30/快速排序2-python/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647from __future__ import print_functiondef quick_sort(ARRAY):    &quot;&quot;&quot;    快速排序：不稳定，    算法思想：    首先在要排序的序列 a 中选取一个中轴值，而后">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-30T13:45:53.178Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wardseptember&#39;s blog">
+<meta name="twitter:title" content="快速排序2--python">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647from __future__ import print_functiondef quick_sort(ARRAY):    &quot;&quot;&quot;    快速排序：不稳定，    算法思想：    首先在要排序的序列 a 中选取一个中轴值，而后">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -157,16 +162,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-快速排序2-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-快速排序2-python" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/30/快速排序2-python/">快速排序2--python</a>
+    <h1 class="article-title" itemprop="name">
+      快速排序2--python
     </h1>
   
 
@@ -179,13 +182,55 @@
     
     <div class="article-entry" itemprop="articleBody">
 	  
+		<div style="margin-bottom:15px;margin-top:15px;">
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=80 src="//music.163.com/outchain/player?type=2&id=449577226&auto=1&height=66"></iframe>
+		</div>
+	  
       
         <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort</span><span class="params">(ARRAY)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    快速排序：不稳定，</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    首先在要排序的序列 a 中选取一个中轴值，而后将序列分成两个部分，</span></span><br><span class="line"><span class="string">    其中左边的部分 b 中的元素均小于或者等于 中轴值，右边的部分 c</span></span><br><span class="line"><span class="string">    的元素 均大于或者等于中轴值，而后通过递归调用快速排序的过程分别</span></span><br><span class="line"><span class="string">    对两个部分进行排序，最后将两部分产生的结果合并即可得到最后的排序</span></span><br><span class="line"><span class="string">    序列。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    ARRAY_LENGTH = len(ARRAY)</span><br><span class="line">    <span class="keyword">if</span>( ARRAY_LENGTH &lt;= <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">return</span> ARRAY</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">#默认把第一个元素值当做中轴</span></span><br><span class="line">        PIVOT = ARRAY[<span class="number">0</span>]</span><br><span class="line">        <span class="comment">#找出比中轴值大的元素</span></span><br><span class="line">        GREATER = [ element <span class="keyword">for</span> element <span class="keyword">in</span> ARRAY[<span class="number">1</span>:] <span class="keyword">if</span> element &gt; PIVOT ]</span><br><span class="line">        <span class="comment">#找出比中轴值小的元素</span></span><br><span class="line">        LESSER = [ element <span class="keyword">for</span> element <span class="keyword">in</span> ARRAY[<span class="number">1</span>:] <span class="keyword">if</span> element &lt;= PIVOT ]</span><br><span class="line">        <span class="comment">#递归，分别对左、右半部分进行划分</span></span><br><span class="line">        <span class="keyword">return</span> quick_sort(LESSER) + [PIVOT] + quick_sort(GREATER)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'Enter numbers separated by a comma:\n'</span>).strip()</span><br><span class="line">    unsorted = [ int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>) ]</span><br><span class="line">    print( quick_sort(unsorted) )</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/30/快速排序2-python/#more">more >></a>
-        
+<a id="more"></a>
+<h2 id="一些说明："><a href="#一些说明：" class="headerlink" title="一些说明："></a>一些说明：</h2><ul>
+<li>我的<a href="https://github.com/wardseptember/The_Algorithms_in_python" target="_blank" rel="noopener">github项目</a>上有完整的算法代码，欢迎star,fork.</li>
+<li>这里的所有算法均用python实现，“翻译”自<a href="https://github.com/TheAlgorithms/Python" target="_blank" rel="noopener">国外某程序员的项目</a>。</li>
+<li>这里的“翻译”不单单指的是英译中，而且是为每个算法添加上算法思想描述和关键代码注释。</li>
+<li>为什么要“翻译”这个项目？一方面是我想系统地学习下如何用python实现各种算法，另一方面是边学习边做笔记，通过这个项目记录自己的学习过程，再者，原项目经过“翻译”后，更容易被中国人理解，为想学习python的朋友提供一个不错的算法参考。</li>
+<li>这里的算法很多，而且有些算法比较复杂，工作量很大。如果一些朋友有空闲时间，也可以参与翻译，十分欢迎。</li>
+<li>另外我的<a href="https://blog.csdn.net/wardseptember" target="_blank" rel="noopener">CSDN博客</a>也同步更新,值得去看一看。</li>
+</ul>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aiply.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -203,12 +248,12 @@
 	</div>
 
 	  
+		<span class="archive-article-date">
+			浏览量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	  
       
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/30/快速排序2-python/">展开全文 >></a>
-        </p>
       
 
       
@@ -216,6 +261,18 @@
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/30/快速排序1-python/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">快速排序1--python</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -230,733 +287,50 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-快速排序1-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/30/快速排序1-python/">快速排序1--python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/30/快速排序1-python/" class="archive-article-date">
-  	<time datetime="2018-08-30T13:39:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort_3partition</span><span class="params">(sorting, left, right)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    快速排序：不稳定，</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    首先在要排序的序列 a 中选取一个中轴值，而后将序列分成两个部分，</span></span><br><span class="line"><span class="string">    其中左边的部分 b 中的元素均小于或者等于 中轴值，右边的部分 c</span></span><br><span class="line"><span class="string">    的元素 均大于或者等于中轴值，而后通过递归调用快速排序的过程分别</span></span><br><span class="line"><span class="string">    对两个部分进行排序，最后将两部分产生的结果合并即可得到最后的排序</span></span><br><span class="line"><span class="string">    序列。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; quick_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> right &lt;= left:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    a = i = left</span><br><span class="line">    b = right</span><br><span class="line">    pivot = sorting[left]</span><br><span class="line">    <span class="keyword">while</span> i &lt;= b:</span><br><span class="line">        <span class="comment">#将小于中轴值的元素放在列表前面</span></span><br><span class="line">        <span class="keyword">if</span> sorting[i] &lt; pivot:</span><br><span class="line">            sorting[a], sorting[i] = sorting[i], sorting[a]</span><br><span class="line">            <span class="comment">#a右移一位</span></span><br><span class="line">            a += <span class="number">1</span></span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        <span class="comment">#将大于中轴值的元素放在列表后面</span></span><br><span class="line">        <span class="keyword">elif</span> sorting[i] &gt; pivot:</span><br><span class="line">            sorting[b], sorting[i] = sorting[i], sorting[b]</span><br><span class="line">            <span class="comment">#b左移一位</span></span><br><span class="line">            b -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment">#继续比较下一个元素</span></span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        <span class="comment">#print(sorting)  看输出结果便能很好理解</span></span><br><span class="line">    <span class="comment">#循环结束后a=b=i</span></span><br><span class="line">    <span class="comment">#递归对左半部分进行快速排序</span></span><br><span class="line">    quick_sort_3partition(sorting, left, a - <span class="number">1</span>)</span><br><span class="line">    <span class="comment">#递归对右半部分进行快速排序</span></span><br><span class="line">    quick_sort_3partition(sorting, b + <span class="number">1</span>, right)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'Enter numbers separated by a comma:\n'</span>).strip()</span><br><span class="line">    unsorted = [ int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>) ]</span><br><span class="line">    quick_sort_3partition(unsorted,<span class="number">0</span>,len(unsorted)<span class="number">-1</span>)</span><br><span class="line">    print(unsorted)</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/30/快速排序1-python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/30/快速排序1-python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一些说明："><span class="toc-number">1.</span> <span class="toc-text">一些说明：</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-  
-    <article id="post-煎饼排序-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/30/煎饼排序-python/">煎饼排序--python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/30/煎饼排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-30T13:38:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">pancakesort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    煎饼排序（默认升序）</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    每次循环找到元素最大值，然后将其翻转到列表首位，</span></span><br><span class="line"><span class="string">    再对整个列表进行翻转，将它翻转到列表最后的位置。</span></span><br><span class="line"><span class="string">    每次循环就有一个元素归位，所以将待比较的元素总</span></span><br><span class="line"><span class="string">    数减一，即剔除归位的元素</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    cur = len(arr)</span><br><span class="line">    <span class="keyword">while</span> cur &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="comment"># 找到列表中的最大值</span></span><br><span class="line">        mi = arr.index(max(arr[<span class="number">0</span>:cur]))</span><br><span class="line">        <span class="comment"># 翻转0到mi的元素</span></span><br><span class="line">        arr = arr[mi::<span class="number">-1</span>] + arr[mi+<span class="number">1</span>:len(arr)]</span><br><span class="line">        <span class="comment"># 翻转整个列表</span></span><br><span class="line">        arr = arr[cur<span class="number">-1</span>::<span class="number">-1</span>] + arr[cur:len(arr)]</span><br><span class="line">        <span class="comment">#列表待归位元素数减一</span></span><br><span class="line">        cur -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'Enter numbers separated by a comma:\n'</span>).strip()</span><br><span class="line">    unsorted = [ int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>) ]</span><br><span class="line">    print(pancakesort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/30/煎饼排序-python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/30/煎饼排序-python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-二路归并排序——python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/11/二路归并排序——python/">二路归并排序——python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/11/二路归并排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-11T15:15:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_sort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    二路归并排序（稳定排序），结果升序</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    　　二路归并排序主旨是“分解”与“归并”</span></span><br><span class="line"><span class="string">　　分解：　　</span></span><br><span class="line"><span class="string">　　　　1.将一个数组分成两个数组，分别对两个数组进行排序。</span></span><br><span class="line"><span class="string">　　　　2.循环第一步，直到划分出来的“小数组”只包含一个元素，</span></span><br><span class="line"><span class="string">    只有一个元素的数组默认为已经排好序。</span></span><br><span class="line"><span class="string">　　归并：</span></span><br><span class="line"><span class="string">　　　　1.将两个有序的数组合并到一个大的数组中。</span></span><br><span class="line"><span class="string">　　　　2.从最小的只包含一个元素的数组开始两两合并。此时，合并</span></span><br><span class="line"><span class="string">    好的数组也是有序的。</span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; merge_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; merge_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; merge_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    length = len(collection)</span><br><span class="line">    <span class="keyword">if</span> length &gt; <span class="number">1</span>:</span><br><span class="line">        midpoint = length // <span class="number">2</span></span><br><span class="line">        <span class="comment">#递归处理前半段</span></span><br><span class="line">        left_half = merge_sort(collection[:midpoint])</span><br><span class="line">        <span class="comment">#递归处理后半段</span></span><br><span class="line">        right_half = merge_sort(collection[midpoint:])</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        j = <span class="number">0</span></span><br><span class="line">        k = <span class="number">0</span></span><br><span class="line">        left_length = len(left_half)</span><br><span class="line">        right_length = len(right_half)</span><br><span class="line">        <span class="comment">#比较这两段，小的元素先放入结果数组</span></span><br><span class="line">        <span class="keyword">while</span> i &lt; left_length <span class="keyword">and</span> j &lt; right_length:</span><br><span class="line">            <span class="keyword">if</span> left_half[i] &lt; right_half[j]:</span><br><span class="line">                collection[k] = left_half[i]</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                collection[k] = right_half[j]</span><br><span class="line">                j += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">#如果左半段没有处理完，则直接放入结果数组</span></span><br><span class="line">        <span class="keyword">while</span> i &lt; left_length:</span><br><span class="line">            collection[k] = left_half[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">#如果右半段没有处理完，则直接放入结果数组</span></span><br><span class="line">        <span class="keyword">while</span> j &lt; right_length:</span><br><span class="line">            collection[k] = right_half[j]</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(merge_sort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/11/二路归并排序——python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/11/二路归并排序——python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-堆排序-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/10/堆排序-python/">堆排序--python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/10/堆排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-10T15:11:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="comment">#调整堆的函数，此为大顶堆</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heapify</span><span class="params">(unsorted, index, heap_size)</span>:</span></span><br><span class="line">    largest = index <span class="comment">#父结点</span></span><br><span class="line">    left_index = <span class="number">2</span> * index + <span class="number">1</span>  <span class="comment">#左孩子</span></span><br><span class="line">    right_index = <span class="number">2</span> * index + <span class="number">2</span> <span class="comment">#右孩子</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">#下面两个If实现largest为三者中的最大值</span></span><br><span class="line">    <span class="keyword">if</span> left_index &lt; heap_size <span class="keyword">and</span> unsorted[left_index] &gt; unsorted[largest]:</span><br><span class="line">        largest = left_index</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> right_index &lt; heap_size <span class="keyword">and</span> unsorted[right_index] &gt; unsorted[largest]:</span><br><span class="line">        largest = right_index</span><br><span class="line"></span><br><span class="line">    <span class="comment">#找到三者中最大值，进行交换</span></span><br><span class="line">    <span class="keyword">if</span> largest != index:</span><br><span class="line">        unsorted[largest], unsorted[index] = unsorted[index], unsorted[largest]</span><br><span class="line">        heapify(unsorted, largest, heap_size)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heap_sort</span><span class="params">(unsorted)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    堆排序（不稳定排序）</span></span><br><span class="line"><span class="string">    #算法详细讲解见https://www.cnblogs.com/chengxiao/p/6129630.html</span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; heap_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    n = len(unsorted)</span><br><span class="line">    <span class="comment">#第一次建立大顶堆</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n // <span class="number">2</span> - <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-1</span>):</span><br><span class="line">        <span class="comment">#从第一个非叶子结点从下至上，从右至左调整结构</span></span><br><span class="line">        heapify(unsorted, i, n)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#交换堆顶元素与末尾元素+调整堆结构</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n - <span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">        <span class="comment">#将堆顶元素与末尾元素进行交换</span></span><br><span class="line">        unsorted[<span class="number">0</span>], unsorted[i] = unsorted[i], unsorted[<span class="number">0</span>]</span><br><span class="line">        <span class="comment">#重新对堆进行调整</span></span><br><span class="line">        heapify(unsorted, <span class="number">0</span>, i)</span><br><span class="line">    <span class="keyword">return</span> unsorted</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(heap_sort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/10/堆排序-python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/10/堆排序-python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-插入排序-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/08/插入排序-python/">插入排序--python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/08/插入排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-08T13:58:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    插入排序</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    初始时，只考虑数组下标0处的元素，只有一个元素，显然是有序的。</span></span><br><span class="line"><span class="string">    然后第一趟 对下标 1 处的元素进行排序，保证数组[0,1]上的元素有序；</span></span><br><span class="line"><span class="string">    第二趟 对下标 2 处的元素进行排序，保证数组[0,2]上的元素有序；</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    第N-1趟对下标 N-1 处的元素进行排序，保证数组[0,N-1]上的元素有序，也就是整个数组有序了。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>, len(collection)):</span><br><span class="line">        <span class="keyword">while</span> <span class="number">0</span> &lt; index <span class="keyword">and</span> collection[index] &lt; collection[index - <span class="number">1</span>]:</span><br><span class="line">            collection[index], collection[</span><br><span class="line">                index - <span class="number">1</span>] = collection[index - <span class="number">1</span>], collection[index]</span><br><span class="line">            index -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(insertion_sort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/08/插入排序-python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/08/插入排序-python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-圈排序——python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/圈排序——python/">圈排序——python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/06/圈排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-06T14:06:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <p>所谓的圈的定义,我只能想到用例子来说明,实在不好描述</p>
-<p>待排数组[ 6 2 4 1 5 9 ]</p>
-<p>排完序后[ 1 2 4 5 6 9 ]</p>
-<p>数组索引[ 0 1 2 3 4 5 ]</p>
-<p>第一部分</p>
-<p>第一步,我们现在来观察待排数组和排完后的结果,以及待排数组的索引,可以发现</p>
-<p>排完序后的6应该出现在索引4的位置上,而它现在却在位置0上,</p>
-<p>记住这个位置啊,一直找到某个数应该待在位置0上我们的任务就完成了</p>
-<p>待排数组[ 6 2 4 1 5 9 ]</p>
-<p>排完序后[ 1 2 4 5 6 9 ]</p>
-<p>数组索引[ 0 1 2 3 4 5 ]</p>
-<p>第二步,而待排数组索引4位置上的5应该出现在索引3的位置上</p>
-<p>待排数组[ 6 2 4 1 5 9 ]</p>
-<p>排完序后[ 1 2 4 5 6 9 ]</p>
-<p>数组索引[ 0 1 2 3 4 5 ]<br>
-        
-          <a class="article-more-a" href="/2018/08/06/圈排序——python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/圈排序——python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-地精排序-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/地精排序-python/">地精排序--python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/06/地精排序-python/" class="archive-article-date">
-  	<time datetime="2018-08-06T03:56:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gnome_sort</span><span class="params">(unsorted)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    地精排序，默认升序</span></span><br><span class="line"><span class="string">    算法思想：定义一个变量i,如果a[i-1]&lt;=a[i],i=i+1,</span></span><br><span class="line"><span class="string">    否则，则交换，并把i变为i-1,就这样来回移动索引位置，</span></span><br><span class="line"><span class="string">    是整个列表有序</span></span><br><span class="line"><span class="string">    这个排序算法是稳定的</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> len(unsorted) &lt;= <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> unsorted</span><br><span class="line">        </span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> i &lt; len(unsorted):</span><br><span class="line">        <span class="keyword">if</span> unsorted[i<span class="number">-1</span>] &lt;= unsorted[i]:</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            unsorted[i<span class="number">-1</span>], unsorted[i] = unsorted[i], unsorted[i<span class="number">-1</span>]</span><br><span class="line">            i -= <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> (i == <span class="number">0</span>):</span><br><span class="line">                i = <span class="number">1</span></span><br><span class="line">                </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line">    </span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    gnome_sort(unsorted)</span><br><span class="line">    print(unsorted)</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/06/地精排序-python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/地精排序-python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-CS排序-python-冒泡排序改版" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/05/CS排序-python-冒泡排序改版/">CS排序--python(冒泡排序改版)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/05/CS排序-python-冒泡排序改版/" class="archive-article-date">
-  	<time datetime="2018-08-05T15:30:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cocktail_shaker_sort</span><span class="params">(unsorted)</span>:</span></span><br><span class="line">    <span class="comment">#cocktail shaker鸡尾酒调制器，估计是边喝酒边写的，就叫CS排序，</span></span><br><span class="line">    <span class="comment">#冒泡排序的改版，可对比理解</span></span><br><span class="line">    <span class="comment">#排序结果默认升序</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#range(start, stop, step) 假设len(unsorted)=10，相当于依次取9,8，7，6···</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(unsorted)<span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">        swapped = <span class="keyword">False</span>  <span class="comment">#哨兵，</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">#这个循环从后向前遍历，把最小元素移到第一个位置</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">            <span class="keyword">if</span> unsorted[j] &lt; unsorted[j<span class="number">-1</span>]: <span class="comment">#小的元素前移</span></span><br><span class="line">                unsorted[j], unsorted[j<span class="number">-1</span>] = unsorted[j<span class="number">-1</span>], unsorted[j]</span><br><span class="line">                swapped = <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">#这个循环从前向后遍历，把最大元素移到最后一个位置</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i):</span><br><span class="line">            <span class="keyword">if</span> unsorted[j] &gt; unsorted[j+<span class="number">1</span>]: <span class="comment">#大的元素后移</span></span><br><span class="line">                unsorted[j], unsorted[j+<span class="number">1</span>] = unsorted[j+<span class="number">1</span>], unsorted[j]</span><br><span class="line">                swapped = <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">#经过这两个循环，每一趟都有两个元素到达最终位置</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> swapped:<span class="comment">#如果swapped=false就代表没有发生交换，已经有序，跳出循环</span></span><br><span class="line">            <span class="keyword">return</span> unsorted</span><br><span class="line">            </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line">    </span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    cocktail_shaker_sort(unsorted)</span><br><span class="line">    print(unsorted)</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/05/CS排序-python-冒泡排序改版/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/05/CS排序-python-冒泡排序改版/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-bogo排序——python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/05/bogo排序——python/">bogo排序——python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/05/bogo排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-05T12:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function  <span class="comment"># 在Python2环境下print必须按照python3方式书写，如print("good")</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bogosort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    这个我也不知道叫什么排序，暂且叫bogo排序</span></span><br><span class="line"><span class="string">    默认升序</span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isSorted</span><span class="params">(collection)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(collection) &lt; <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(collection) - <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> collection[i] &gt; collection[i + <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> isSorted(collection):   <span class="comment">#列表不是升序序列，就进行排序</span></span><br><span class="line">        random.shuffle(collection)   <span class="comment">#对列表进行随机排序</span></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(bogosort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/05/bogo排序——python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/05/bogo排序——python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+  
+  
+
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2018/08/30/快速排序2-python/",
+  owner: 'wardseptember',
+  repo: 'wardseptember.github.io',
+  oauth: {
+    client_id: 'cd04f15359635cf78db1',
+    client_secret: '0d9d7a78ef75c9188bc97b34f8d9364d3a52ce04',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
@@ -987,8 +361,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
