@@ -159,6 +159,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-解决gitment无法登陆问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/24/解决gitment无法登陆问题/">解决gitment无法登陆问题</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/24/解决gitment无法登陆问题/" class="archive-article-date">
+  	<time datetime="2018-09-24T03:52:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	  
+      
+        <h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>至于如何利用github page+hexo+yilia+gitment搭建个人博客和评论系统网上有很多教程，这边就不说了。<br>我用的yilia主题，其他主题也都类似。最近gitment作者那个服务器过期了好像，所以登陆时一直报Object ProgressEvent。</p>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>打开你的blog本地仓库<code>themes\yilia\layout\_partial\post\gitment.ejs</code>将</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//imsun.github.io/gitment/style/default.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//imsun.github.io/gitment/dist/gitment.browser.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改为：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://jjeejj.github.io/css/gitment.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://jjeejj.github.io/js/gitment.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>登陆时就不会再报错了，这是别人新搭建的服务器，我也是在<a href="https://www.wenjunjiang.win/" target="_blank" rel="noopener">jjeejj</a>的帮助下才弄好的。</p>
+<h4 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h4><p><a href="https://www.wenjunjiang.win/2017/07/02/gitment%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E6%8E%A5%E5%85%A5hexo/" target="_blank" rel="noopener">https://www.wenjunjiang.win/2017/07/02/gitment%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E6%8E%A5%E5%85%A5hexo/</a><br><a href="https://github.com/imsun/gitment/issues/170" target="_blank" rel="noopener">https://github.com/imsun/gitment/issues/170</a><br>也可以自己搭建服务器，里面都有教程。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">myblog</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+	  
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/24/解决gitment无法登陆问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-快速排序2-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -875,84 +957,6 @@
 
 
   
-    <article id="post-bogo排序——python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/05/bogo排序——python/">bogo排序——python</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/05/bogo排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-05T12:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-	  
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function  <span class="comment"># 在Python2环境下print必须按照python3方式书写，如print("good")</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bogosort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    这个我也不知道叫什么排序，暂且叫bogo排序</span></span><br><span class="line"><span class="string">    默认升序</span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; bogosort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isSorted</span><span class="params">(collection)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(collection) &lt; <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(collection) - <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> collection[i] &gt; collection[i + <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> isSorted(collection):   <span class="comment">#列表不是升序序列，就进行排序</span></span><br><span class="line">        random.shuffle(collection)   <span class="comment">#对列表进行随机排序</span></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(bogosort(unsorted))</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/08/05/bogo排序——python/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-	  
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/05/bogo排序——python/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1059,6 +1063,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">myblog</a>
               </li>
             
             <div class="clearfix"></div>
