@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="wardseptember&#39;s blog">
 <meta property="og:description" content="写在前面至于如何利用github page+hexo+yilia+gitment搭建个人博客和评论系统网上有很多教程，这边就不说了。我用的yilia主题，其他主题也都类似。最近gitment作者那个服务器过期了好像，所以登陆时一直报Object ProgressEvent。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-24T04:13:42.288Z">
+<meta property="og:updated_time" content="2018-11-24T04:42:28.808Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决gitment无法登陆问题">
 <meta name="twitter:description" content="写在前面至于如何利用github page+hexo+yilia+gitment搭建个人博客和评论系统网上有很多教程，这边就不说了。我用的yilia主题，其他主题也都类似。最近gitment作者那个服务器过期了好像，所以登陆时一直报Object ProgressEvent。">
@@ -183,7 +183,7 @@
     <div class="article-entry" itemprop="articleBody">
 	  
 		<div style="margin-bottom:15px;margin-top:15px;">
-		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=80 src="//music.163.com/outchain/player?type=2&id=30814948&auto=1&height=66"></iframe>
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=80 src="//music.163.com/outchain/player?type=2&id=30814948&auto=1&height=66"></iframe>
 		</div>
 	  
       
@@ -193,6 +193,7 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//imsun.github.io/gitment/style/default.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//imsun.github.io/gitment/dist/gitment.browser.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>修改为：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://jjeejj.github.io/css/gitment.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://jjeejj.github.io/js/gitment.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>或者修改为：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://jjeejj.github.io/css/gitment.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://www.wenjunjiang.win/js/gitment.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>登陆时就不会再报错了，这是别人新搭建的服务器，我也是在<a href="https://www.wenjunjiang.win/" target="_blank" rel="noopener">jjeejj</a>的帮助下才弄好的。</p>
 <h4 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h4><p><a href="https://www.wenjunjiang.win/2017/07/02/gitment%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E6%8E%A5%E5%85%A5hexo/" target="_blank" rel="noopener">gitment评论模块接入hexo</a><br><a href="https://github.com/imsun/gitment/issues/170" target="_blank" rel="noopener">https://github.com/imsun/gitment/issues/170</a><br>也可以自己搭建服务器，里面都有教程。</p>
 
