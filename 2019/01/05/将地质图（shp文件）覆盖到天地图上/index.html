@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: python算法 | wardseptember&#39;s blog</title>
+  <title>将地质图（shp文件）覆盖到天地图上 | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wardseptember&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/tags/python算法/page/2/index.html">
+  <meta name="description" content="1.环境依赖python2.7+pyshp模块下载python2.7">
+<meta name="keywords" content="python算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="将地质图（shp文件）覆盖到天地图上">
+<meta property="og:url" content="http://yoursite.com/2019/01/05/将地质图（shp文件）覆盖到天地图上/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
+<meta property="og:description" content="1.环境依赖python2.7+pyshp模块下载python2.7">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190105214552750.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-01-05T14:36:17.153Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wardseptember&#39;s blog">
+<meta name="twitter:title" content="将地质图（shp文件）覆盖到天地图上">
+<meta name="twitter:description" content="1.环境依赖python2.7+pyshp模块下载python2.7">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190105214552750.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -157,36 +164,80 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-将地质图（shp文件）覆盖到天地图上" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      将地质图（shp文件）覆盖到天地图上
+    </h1>
+  
+
+        
+        <a href="/2019/01/05/将地质图（shp文件）覆盖到天地图上/" class="archive-article-date">
+  	<time datetime="2019-01-05T14:06:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-05</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+	  
+		<div style="margin-bottom:15px;margin-top:15px;">
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=315 height=80 src="//music.163.com/outchain/player?type=2&id=30814948&auto=1&height=66"></iframe>
+		</div>
+	  
+      
+        <h2 id="1-环境依赖"><a href="#1-环境依赖" class="headerlink" title="1.环境依赖"></a>1.环境依赖</h2><p>python2.7+pyshp模块<br><a href="https://pan.baidu.com/s/1msaFqMc4XVtD6_tFy7fCVw" target="_blank" rel="noopener">下载python2.7</a><br><a id="more"></a></p>
+<h2 id="2-配置环境"><a href="#2-配置环境" class="headerlink" title="2.配置环境"></a>2.配置环境</h2><p>安装时可以直接add path。<br>在cmd中输入python,出现以下界面代表配置成功。<br><a href="https://blog.csdn.net/wardseptember/article/details/79965836" target="_blank" rel="noopener">手动配置环境变量教程</a><br>网上有很多教程可以去搜搜。<br><img src="https://img-blog.csdnimg.cn/20190105214552750.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>环境配置好后，在cmd中输入<code>python -m pip  install  pyshp  -i http://mirrors.aliyun.com/pypi/simple  --trusted-host mirrors.aliyun.com</code>安装pyshp模块。<br>至此环境就配置好了。</p>
+<h2 id="3-主要代码"><a href="#3-主要代码" class="headerlink" title="3.主要代码"></a>3.主要代码</h2><p>首先到开发目录开启服务器<code>python -m CGIHTTP 8889</code>，在浏览器中输入<code>localhost:8889</code>。<br>在你的开发目录新建index.html文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"天地图"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>天地图－地图API－范例－经纬度直投地图<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://api.tianditu.gov.cn/api?v=4.0&amp;tk=您的密钥"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"><span class="selector-tag">body</span>,<span class="selector-tag">html</span>&#123;<span class="attribute">width</span>:<span class="number">100%</span>;<span class="attribute">height</span>:<span class="number">100%</span>;<span class="attribute">margin</span>:<span class="number">0</span>;<span class="attribute">font-family</span>:<span class="string">"Microsoft YaHei"</span>&#125;<span class="selector-id">#mapDiv</span>&#123;<span class="attribute">width</span>:<span class="number">100%</span>;<span class="attribute">height</span>:<span class="number">400px</span>&#125;<span class="selector-tag">input</span>,<span class="selector-tag">b</span>,<span class="selector-tag">p</span>&#123;<span class="attribute">margin-left</span>:<span class="number">5px</span>;<span class="attribute">font-size</span>:<span class="number">14px</span>&#125;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://localhost:8889/cgi-bin/readShp.py"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onLoad</span>=<span class="string">"onLoad()"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mapDiv"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在你的开发目录新建一个文件cgi-bin，写的py文件必须放在这个目录。<br>readShp.py<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Author: wardseptember</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Content-Type:text/javascript"</span></span><br><span class="line"><span class="keyword">print</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> shapefile</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>) </span><br><span class="line">sf = shapefile.Reader(<span class="string">"./cgi-bin/shapefile/aotao.shp"</span>)</span><br><span class="line">shapes = sf.shapes()</span><br><span class="line"></span><br><span class="line">first_str = <span class="string">'''</span></span><br><span class="line"><span class="string">	var map;</span></span><br><span class="line"><span class="string">    var zoom = 9;</span></span><br><span class="line"><span class="string">    map = new T.Map('mapDiv', &#123;</span></span><br><span class="line"><span class="string">        projection: 'EPSG:32650'</span></span><br><span class="line"><span class="string">    &#125;);</span></span><br><span class="line"><span class="string">    map.centerAndZoom(new T.LngLat(112.858577, 35.497694), zoom);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">name_str=<span class="string">''''''</span></span><br><span class="line"><span class="keyword">for</span> num <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">	name_str=name_str+<span class="string">'''</span></span><br><span class="line"><span class="string">		points_autao%d=[];</span></span><br><span class="line"><span class="string">	'''</span>% (num)</span><br><span class="line"></span><br><span class="line">first_str=first_str+name_str</span><br><span class="line"></span><br><span class="line">polyline_str = <span class="string">''''''</span></span><br><span class="line"><span class="keyword">for</span> shp <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">    shap = shapes[shp]<span class="comment">#一个面文件，里面可能有很多ploygon,shapes[shp]就是一个，一共有len(shapes)个ploygon</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(shap.points)):<span class="comment">#读每个ploygon中点坐标</span></span><br><span class="line">        polyline_str=polyline_str+<span class="string">'''</span></span><br><span class="line"><span class="string">            points_autao%d.push(new T.LngLat(%f, %f));</span></span><br><span class="line"><span class="string">        '''</span>% (shp,shap.points[i][<span class="number">0</span>],shap.points[i][<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">finally_str=<span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> num <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">	finally_str=finally_str+<span class="string">'''</span></span><br><span class="line"><span class="string">	    var polygon_autao%d = new T.Polygon(points_autao%d,&#123;</span></span><br><span class="line"><span class="string">	                color: "blue", weight: 3, opacity: 0.5, fillColor: "red", fillOpacity: 0.5</span></span><br><span class="line"><span class="string">	            &#125;);</span></span><br><span class="line"><span class="string">	    map.addOverLay(polygon_autao%d);</span></span><br><span class="line"><span class="string">	'''</span>% (num,num,num)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> first_str+polyline_str+finally_str</span><br><span class="line"><span class="comment">#必须要挨个读取ploygon，不能一次读取，不然画出来的图形就乱了。一次压入所有点，就依点画，明显不对。</span></span><br></pre></td></tr></table></figure></p>
+<p>读其他ploygon图层写法</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Author: wardseptember</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Content-Type:text/javascript"</span></span><br><span class="line"><span class="keyword">print</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> shapefile</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>) </span><br><span class="line">sf = shapefile.Reader(<span class="string">"./cgi-bin/shapefile/sandie.shp"</span>)</span><br><span class="line">shapes = sf.shapes()</span><br><span class="line"></span><br><span class="line">first_str = <span class="string">'''</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">name_str=<span class="string">''''''</span></span><br><span class="line"><span class="keyword">for</span> num <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">	name_str=name_str+<span class="string">'''</span></span><br><span class="line"><span class="string">		points_sd%d=[];</span></span><br><span class="line"><span class="string">	'''</span>% (num)</span><br><span class="line"></span><br><span class="line">first_str=first_str+name_str</span><br><span class="line"></span><br><span class="line">polyline_str = <span class="string">''''''</span></span><br><span class="line"><span class="keyword">for</span> shp <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">    shap = shapes[shp]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(shap.points)):</span><br><span class="line">        polyline_str=polyline_str+<span class="string">'''</span></span><br><span class="line"><span class="string">            points_sd%d.push(new T.LngLat(%f, %f));</span></span><br><span class="line"><span class="string">        '''</span>% (shp,shap.points[i][<span class="number">0</span>],shap.points[i][<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">finally_str=<span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> num <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">	finally_str=finally_str+<span class="string">'''</span></span><br><span class="line"><span class="string">	    var polygon_sd%d = new T.Polygon(points_sd%d,&#123;</span></span><br><span class="line"><span class="string">	                color: "blue", weight: 3, opacity: 0.5, fillColor: "#37FA3F", fillOpacity: 0.5</span></span><br><span class="line"><span class="string">	            &#125;);</span></span><br><span class="line"><span class="string">	    map.addOverLay(polygon_sd%d);</span></span><br><span class="line"><span class="string">	'''</span>% (num,num,num)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> first_str+polyline_str+finally_str</span><br></pre></td></tr></table></figure>
+<p>读线文件</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Author: wardseptember</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Content-Type:text/javascript"</span></span><br><span class="line"><span class="keyword">print</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> shapefile</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>) </span><br><span class="line">sf = shapefile.Reader(<span class="string">"./cgi-bin/shapefile/JCborder.shp"</span>)</span><br><span class="line">shapes = sf.shapes()</span><br><span class="line">first_str = <span class="string">'''points = [];'''</span></span><br><span class="line">polyline_str = <span class="string">''''''</span></span><br><span class="line"><span class="keyword">for</span> shp <span class="keyword">in</span> range(len(shapes)):</span><br><span class="line">    shap = shapes[shp]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(shap.points)):</span><br><span class="line">        polyline_str=polyline_str+<span class="string">'''</span></span><br><span class="line"><span class="string">            points.push(new T.LngLat(%f, %f));</span></span><br><span class="line"><span class="string">        '''</span>% (shap.points[i][<span class="number">0</span>],shap.points[i][<span class="number">1</span>])</span><br><span class="line">finally_str=<span class="string">'''</span></span><br><span class="line"><span class="string">    var line = new T.Polyline(points);</span></span><br><span class="line"><span class="string">    map.addOverLay(line);</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> first_str+polyline_str</span><br></pre></td></tr></table></figure>
+<p>可以发现读线读点读面写法类似。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aiply.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/bogo排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-05T12:10:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/bogo排序——python/">bogo排序——python</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,98 +249,99 @@
 		</ul>
 	</div>
 
-          
+	  
+		<span class="archive-article-date">
+			浏览量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	  
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/05/计数排序——python-稳定版算法/" class="archive-article-date">
-  	<time datetime="2018-08-05T11:56:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/01/06/将地质图（shp文件）叠加到天地图上/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          将地质图（shp文件）叠加到天地图上
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/24/解决gitment无法登陆问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决gitment无法登陆问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/计数排序——python-稳定版算法/">计数排序——python(稳定版算法)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-环境依赖"><span class="toc-number">1.</span> <span class="toc-text">1.环境依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-配置环境"><span class="toc-number">2.</span> <span class="toc-text">2.配置环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-主要代码"><span class="toc-number">3.</span> <span class="toc-text">3.主要代码</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/04/冒泡排序——python/" class="archive-article-date">
-  	<time datetime="2018-08-04T01:50:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/04/冒泡排序——python/">冒泡排序——python</a>
-    </h1>
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/tags/python算法/">&laquo; Prev</a><a class="page-number" href="/tags/python算法/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/01/05/将地质图（shp文件）覆盖到天地图上/",
+  owner: 'wardseptember',
+  repo: 'wardseptember.github.io',
+  oauth: {
+    client_id: 'cd04f15359635cf78db1',
+    client_secret: '0d9d7a78ef75c9188bc97b34f8d9364d3a52ce04',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
@@ -320,9 +372,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
