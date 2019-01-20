@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | wardseptember&#39;s blog</title>
+  <title>python主流解析库(re beautifulsoup pyquery xpath)实战-爬取猫眼电影排行 | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wardseptember&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="一、环境依赖python3依赖库如下：1pip install request pyquery beautifulsoup4 二、实现1. 目的此次爬取猫眼电影排行榜，提取排名、电影名、主演、上映时间、评分、封面图片等。https://maoyan.com/board/4?offset=0 2. 代码2.1 爬取函数12345678def get_one_page(url):    try:">
+<meta name="keywords" content="python爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python主流解析库(re beautifulsoup pyquery xpath)实战-爬取猫眼电影排行">
+<meta property="og:url" content="http://yoursite.com/2019/01/20/python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
+<meta property="og:description" content="一、环境依赖python3依赖库如下：1pip install request pyquery beautifulsoup4 二、实现1. 目的此次爬取猫眼电影排行榜，提取排名、电影名、主演、上映时间、评分、封面图片等。https://maoyan.com/board/4?offset=0 2. 代码2.1 爬取函数12345678def get_one_page(url):    try:">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-20T03:11:05.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wardseptember&#39;s blog">
+<meta name="twitter:title" content="python主流解析库(re beautifulsoup pyquery xpath)实战-爬取猫眼电影排行">
+<meta name="twitter:description" content="一、环境依赖python3依赖库如下：1pip install request pyquery beautifulsoup4 二、实现1. 目的此次爬取猫眼电影排行榜，提取排名、电影名、主演、上映时间、评分、封面图片等。https://maoyan.com/board/4?offset=0 2. 代码2.1 爬取函数12345678def get_one_page(url):    try:">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
   
@@ -157,36 +162,81 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/01/20/python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行/" class="archive-article-date">
-  	<time datetime="2019-01-20T03:10:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/20/python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行/">python主流解析库(re beautifulsoup pyquery xpath)实战-爬取猫眼电影排行</a>
+    <h1 class="article-title" itemprop="name">
+      python主流解析库(re beautifulsoup pyquery xpath)实战-爬取猫眼电影排行
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/01/20/python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行/" class="archive-article-date">
+  	<time datetime="2019-01-20T03:10:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	  
+		<div style="margin-bottom:15px;margin-top:15px;">
+		   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=315 height=80 src="//music.163.com/outchain/player?type=2&id=30814948&auto=1&height=66"></iframe>
+		</div>
+	  
+      
+        <h1 id="一、环境依赖"><a href="#一、环境依赖" class="headerlink" title="一、环境依赖"></a>一、环境依赖</h1><p>python3<br>依赖库如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install request pyquery beautifulsoup4</span><br></pre></td></tr></table></figure></p>
+<h1 id="二、实现"><a href="#二、实现" class="headerlink" title="二、实现"></a>二、实现</h1><h2 id="1-目的"><a href="#1-目的" class="headerlink" title="1. 目的"></a>1. 目的</h2><p>此次爬取<a href="https://maoyan.com/board/4?offset=0" target="_blank" rel="noopener">猫眼电影排行榜</a>，提取排名、电影名、主演、上映时间、评分、封面图片等。<br><a href="https://maoyan.com/board/4?offset=0" target="_blank" rel="noopener">https://maoyan.com/board/4?offset=0</a></p>
+<h2 id="2-代码"><a href="#2-代码" class="headerlink" title="2. 代码"></a>2. 代码</h2><h3 id="2-1-爬取函数"><a href="#2-1-爬取函数" class="headerlink" title="2.1 爬取函数"></a>2.1 爬取函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_one_page</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        response = requests.get(url)</span><br><span class="line">        <span class="keyword">if</span> response.status_code == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">return</span> response.text</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line">    <span class="keyword">except</span> RequestException:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">None</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-re解析函数"><a href="#2-2-re解析函数" class="headerlink" title="2.2 re解析函数"></a>2.2 re解析函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_one_page</span><span class="params">(html)</span>:</span></span><br><span class="line">    pattern = re.compile(<span class="string">'&lt;dd&gt;.*?board-index.*?&gt;(\d+)&lt;/i&gt;.*?data-src="(.*?)".*?name"&gt;&lt;a'</span></span><br><span class="line">                         +<span class="string">'.*?&gt;(.*?)&lt;/a&gt;.*?star"&gt;(.*?)&lt;/p&gt;.*?releasetime"&gt;(.*?)&lt;/p&gt;'</span></span><br><span class="line">                         +<span class="string">'.*?integer"&gt;(.*?)&lt;/i&gt;.*?fraction"&gt;(.*?)&lt;/i&gt;.*?&lt;/dd&gt;'</span>, re.S)</span><br><span class="line">    items = re.findall(pattern, html)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">        <span class="keyword">yield</span> &#123;</span><br><span class="line">            <span class="string">'index'</span>: item[<span class="number">0</span>],</span><br><span class="line">            <span class="string">'image'</span>: item[<span class="number">1</span>],</span><br><span class="line">            <span class="string">'title'</span>: item[<span class="number">2</span>],</span><br><span class="line">            <span class="string">'actor'</span>: item[<span class="number">3</span>].strip()[<span class="number">3</span>:],</span><br><span class="line">            <span class="string">'time'</span>: item[<span class="number">4</span>].strip()[<span class="number">5</span>:],</span><br><span class="line">            <span class="string">'score'</span>: item[<span class="number">5</span>]+item[<span class="number">6</span>]</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-BeautifulSoup解析"><a href="#2-3-BeautifulSoup解析" class="headerlink" title="2.3 BeautifulSoup解析"></a>2.3 BeautifulSoup解析</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_one_page</span><span class="params">(html)</span>:</span></span><br><span class="line">    soup=BeautifulSoup(html,<span class="string">'lxml'</span>)</span><br><span class="line">    result_id=soup.select(<span class="string">'.board-index'</span>)</span><br><span class="line">    result_title=soup.select(<span class="string">'.image-link'</span>)</span><br><span class="line">    result_img=soup.select(<span class="string">'.board-img'</span>)</span><br><span class="line">    result_star=soup.select(<span class="string">'.star'</span>)</span><br><span class="line">    result_time=soup.select(<span class="string">'.releasetime'</span>)</span><br><span class="line">    result_score1=soup.select(<span class="string">'.integer'</span>)</span><br><span class="line">    result_score2 = soup.select(<span class="string">'.fraction'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="keyword">yield</span> &#123;</span><br><span class="line">            <span class="string">'index'</span>: result_id[i].text,</span><br><span class="line">            <span class="string">'image'</span>: result_img[i].attrs[<span class="string">'data-src'</span>],</span><br><span class="line">            <span class="string">'title'</span>: result_title[i].attrs[<span class="string">'title'</span>],</span><br><span class="line">            <span class="string">'actor'</span>: result_star[i].text.strip()[<span class="number">3</span>:],</span><br><span class="line">            <span class="string">'time'</span>: result_time[i].text.strip()[<span class="number">5</span>:],</span><br><span class="line">            <span class="string">'score'</span>: result_score1[i].text+result_score2[i].text</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-Xpath解析函数"><a href="#2-4-Xpath解析函数" class="headerlink" title="2.4 Xpath解析函数"></a>2.4 Xpath解析函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_one_page</span><span class="params">()</span>:</span></span><br><span class="line">    result=etree.parse(<span class="string">'maoyan.html'</span>,etree.HTMLParser(encoding=<span class="string">'utf-8'</span>))</span><br><span class="line">    result_id=result.xpath(<span class="string">'//div[@class="main"]//dl//dd/i/text()'</span>)</span><br><span class="line">    result_title=result.xpath(<span class="string">'//div[@class="main"]//dl//dd/a/@title'</span>)</span><br><span class="line">    result_img=result.xpath(<span class="string">'//div[@class="main"]//dl//dd//a//img[2]/@data-src'</span>)</span><br><span class="line">    result_star=result.xpath(<span class="string">'//div[@class="main"]//dl//dd//p[@class="star"]/text()'</span>)</span><br><span class="line">    result_time=result.xpath(<span class="string">'//div[@class="main"]//dl//dd//p[@class="releasetime"]/text()'</span>)</span><br><span class="line">    result_score1=result.xpath(<span class="string">'//div[@class="main"]//dl//dd//i[@class="integer"]//text()'</span>)</span><br><span class="line">    result_score2=result.xpath(<span class="string">'//div[@class="main"]//dl//dd//i[@class="fraction"]//text()'</span>)</span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    print(result_id)</span></span><br><span class="line"><span class="string">    print(result_title)</span></span><br><span class="line"><span class="string">    print(result_img)</span></span><br><span class="line"><span class="string">    print(result_star[0].strip()[3:])</span></span><br><span class="line"><span class="string">    print(result_time)</span></span><br><span class="line"><span class="string">    print(result_score1)</span></span><br><span class="line"><span class="string">    print(result_score2)</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="keyword">yield</span> &#123;</span><br><span class="line">            <span class="string">'index'</span>: result_id[i],</span><br><span class="line">            <span class="string">'image'</span>: result_img[i],</span><br><span class="line">            <span class="string">'title'</span>: result_title[i],</span><br><span class="line">            <span class="string">'actor'</span>: result_star[i].strip()[<span class="number">3</span>:],</span><br><span class="line">            <span class="string">'time'</span>: result_time[i].strip()[<span class="number">5</span>:],</span><br><span class="line">            <span class="string">'score'</span>: result_score1[i]+result_score2[i]</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-5-Pyquery解析函数"><a href="#2-5-Pyquery解析函数" class="headerlink" title="2.5 Pyquery解析函数"></a>2.5 Pyquery解析函数</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_one_page</span><span class="params">(html)</span>:</span></span><br><span class="line">    doc=pq(html)</span><br><span class="line">    result_id=doc(<span class="string">'.board-index'</span>)</span><br><span class="line">    result_title=doc(<span class="string">'.image-link'</span>)</span><br><span class="line">    result_img=doc(<span class="string">'.board-img'</span>)</span><br><span class="line">    result_star=doc(<span class="string">'.star'</span>)</span><br><span class="line">    result_time=doc(<span class="string">'.releasetime'</span>)</span><br><span class="line">    result_score1=doc(<span class="string">'.integer'</span>)</span><br><span class="line">    result_score2 = doc(<span class="string">'.fraction'</span>)</span><br><span class="line"></span><br><span class="line">    result_id=[item.text() <span class="keyword">for</span> item <span class="keyword">in</span> result_id.items()]</span><br><span class="line">    result_img=[item.attr(<span class="string">'data-src'</span>) <span class="keyword">for</span> item <span class="keyword">in</span> result_img.items()]</span><br><span class="line">    result_title=[item.attr(<span class="string">'title'</span>) <span class="keyword">for</span> item <span class="keyword">in</span> result_title.items()]</span><br><span class="line">    result_star=[item.text() <span class="keyword">for</span> item <span class="keyword">in</span> result_star.items()]</span><br><span class="line">    result_time=[item.text() <span class="keyword">for</span> item <span class="keyword">in</span> result_time.items()]</span><br><span class="line">    result_score1 = [item.text() <span class="keyword">for</span> item <span class="keyword">in</span> result_score1.items()]</span><br><span class="line">    result_score2 = [item.text() <span class="keyword">for</span> item <span class="keyword">in</span> result_score2.items()]</span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    print(result_img)</span></span><br><span class="line"><span class="string">    print(result_title)</span></span><br><span class="line"><span class="string">    print(result_star)</span></span><br><span class="line"><span class="string">    print(result_id)</span></span><br><span class="line"><span class="string">    print(result_time)</span></span><br><span class="line"><span class="string">    print(result_score1[0]+result_score2[0])</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="keyword">yield</span> &#123;</span><br><span class="line">            <span class="string">'index'</span>: result_id[i],</span><br><span class="line">            <span class="string">'image'</span>: result_img[i],</span><br><span class="line">            <span class="string">'title'</span>: result_title[i],</span><br><span class="line">            <span class="string">'actor'</span>: result_star[i].strip()[<span class="number">3</span>:],</span><br><span class="line">            <span class="string">'time'</span>: result_time[i].strip()[<span class="number">5</span>:],</span><br><span class="line">            <span class="string">'score'</span>: result_score1[i]+result_score2[i]</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-6-写入TXT文件"><a href="#2-6-写入TXT文件" class="headerlink" title="2.6 写入TXT文件"></a>2.6 写入TXT文件</h3><p>与*.py一个目录下，新建四个TXT文件。如<code>result_bs4.txt result_pyquery.txt result_re.txt result_xpath.txt</code><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">write_to_file</span><span class="params">(content)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'result_pyquery.txt'</span>, <span class="string">'a'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(json.dumps(content, ensure_ascii=<span class="keyword">False</span>) + <span class="string">'\n'</span>)</span><br><span class="line">        f.close()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(offset)</span>:</span></span><br><span class="line">    url = <span class="string">'http://maoyan.com/board/4?offset='</span> + str(offset)</span><br><span class="line">    html = get_one_page(url)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> parse_one_page(html):</span><br><span class="line">        <span class="comment">#print(item)</span></span><br><span class="line">        write_to_file(item)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">       main(offset=i*<span class="number">10</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-完整版源码下载"><a href="#3-完整版源码下载" class="headerlink" title="3. 完整版源码下载"></a>3. 完整版源码下载</h2><p><a href="https://github.com/wardseptember/crawlProject/tree/master/%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C" target="_blank" rel="noopener">https://github.com/wardseptember/crawlProject/tree/master/%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C</a><br>欢迎star,谢谢。</p>
+<h1 id="三、部分结果一览"><a href="#三、部分结果一览" class="headerlink" title="三、部分结果一览"></a>三、部分结果一览</h1><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"1"</span>, <span class="attr">"image"</span>: <span class="string">"https://p1.meituan.net/movie/20803f59291c47e1e116c11963ce019e68711.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"霸王别姬"</span>, <span class="attr">"actor"</span>: <span class="string">"张国荣,张丰毅,巩俐"</span>, <span class="attr">"score"</span>: <span class="string">"9.6"</span>, <span class="attr">"time"</span>: <span class="string">"1993-01-01"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"2"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/283292171619cdfd5b240c8fd093f1eb255670.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"肖申克的救赎"</span>, <span class="attr">"actor"</span>: <span class="string">"蒂姆·罗宾斯,摩根·弗里曼,鲍勃·冈顿"</span>, <span class="attr">"score"</span>: <span class="string">"9.5"</span>, <span class="attr">"time"</span>: <span class="string">"1994-10-14(美国)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"3"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/54617769d96807e4d81804284ffe2a27239007.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"罗马假日"</span>, <span class="attr">"actor"</span>: <span class="string">"格利高里·派克,奥黛丽·赫本,埃迪·艾伯特"</span>, <span class="attr">"score"</span>: <span class="string">"9.1"</span>, <span class="attr">"time"</span>: <span class="string">"1953-09-02(美国)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"4"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/e55ec5d18ccc83ba7db68caae54f165f95924.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"这个杀手不太冷"</span>, <span class="attr">"actor"</span>: <span class="string">"让·雷诺,加里·奥德曼,娜塔莉·波特曼"</span>, <span class="attr">"score"</span>: <span class="string">"9.5"</span>, <span class="attr">"time"</span>: <span class="string">"1994-09-14(法国)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"5"</span>, <span class="attr">"image"</span>: <span class="string">"https://p1.meituan.net/movie/f5a924f362f050881f2b8f82e852747c118515.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"教父"</span>, <span class="attr">"actor"</span>: <span class="string">"马龙·白兰度,阿尔·帕西诺,詹姆斯·肯恩"</span>, <span class="attr">"score"</span>: <span class="string">"9.3"</span>, <span class="attr">"time"</span>: <span class="string">"1972-03-24(美国)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"6"</span>, <span class="attr">"image"</span>: <span class="string">"https://p1.meituan.net/movie/0699ac97c82cf01638aa5023562d6134351277.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"泰坦尼克号"</span>, <span class="attr">"actor"</span>: <span class="string">"莱昂纳多·迪卡普里奥,凯特·温丝莱特,比利·赞恩"</span>, <span class="attr">"score"</span>: <span class="string">"9.5"</span>, <span class="attr">"time"</span>: <span class="string">"1998-04-03"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"7"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/da64660f82b98cdc1b8a3804e69609e041108.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"唐伯虎点秋香"</span>, <span class="attr">"actor"</span>: <span class="string">"周星驰,巩俐,郑佩佩"</span>, <span class="attr">"score"</span>: <span class="string">"9.2"</span>, <span class="attr">"time"</span>: <span class="string">"1993-07-01(中国香港)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"8"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/b076ce63e9860ecf1ee9839badee5228329384.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"千与千寻"</span>, <span class="attr">"actor"</span>: <span class="string">"柊瑠美,入野自由,夏木真理"</span>, <span class="attr">"score"</span>: <span class="string">"9.3"</span>, <span class="attr">"time"</span>: <span class="string">"2001-07-20(日本)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"9"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/46c29a8b8d8424bdda7715e6fd779c66235684.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"魂断蓝桥"</span>, <span class="attr">"actor"</span>: <span class="string">"费雯·丽,罗伯特·泰勒,露塞尔·沃特森"</span>, <span class="attr">"score"</span>: <span class="string">"9.2"</span>, <span class="attr">"time"</span>: <span class="string">"1940-05-17(美国)"</span>&#125;</span><br><span class="line">&#123;<span class="attr">"index"</span>: <span class="string">"10"</span>, <span class="attr">"image"</span>: <span class="string">"https://p0.meituan.net/movie/230e71d398e0c54730d58dc4bb6e4cca51662.jpg@160w_220h_1e_1c"</span>, <span class="attr">"title"</span>: <span class="string">"乱世佳人"</span>, <span class="attr">"actor"</span>: <span class="string">"费雯·丽,克拉克·盖博,奥利维娅·德哈维兰"</span>, <span class="attr">"score"</span>: <span class="string">"9.1"</span>, <span class="attr">"time"</span>: <span class="string">"1939-12-15(美国)"</span>&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/wardseptember/crawlProject/tree/master/%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C" target="_blank" rel="noopener">https://github.com/wardseptember/crawlProject/tree/master/%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aiply.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,57 +248,91 @@
 		</ul>
 	</div>
 
-          
+	  
+		<span class="archive-article-date">
+			浏览量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	  
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/01/19/笔记备份/" class="archive-article-date">
-  	<time datetime="2019-01-19T05:59:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/19/笔记备份/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">笔记备份</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/19/笔记备份/">笔记备份</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记备份</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、环境依赖"><span class="toc-number">1.</span> <span class="toc-text">一、环境依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、实现"><span class="toc-number">2.</span> <span class="toc-text">二、实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-目的"><span class="toc-number">2.1.</span> <span class="toc-text">1. 目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-代码"><span class="toc-number">2.2.</span> <span class="toc-text">2. 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-爬取函数"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 爬取函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-re解析函数"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 re解析函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-BeautifulSoup解析"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3 BeautifulSoup解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-Xpath解析函数"><span class="toc-number">2.2.4.</span> <span class="toc-text">2.4 Xpath解析函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-Pyquery解析函数"><span class="toc-number">2.2.5.</span> <span class="toc-text">2.5 Pyquery解析函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-写入TXT文件"><span class="toc-number">2.2.6.</span> <span class="toc-text">2.6 写入TXT文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-完整版源码下载"><span class="toc-number">2.3.</span> <span class="toc-text">3. 完整版源码下载</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、部分结果一览"><span class="toc-number">3.</span> <span class="toc-text">三、部分结果一览</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/01/20/python主流解析库-re-beautifulsoup-pyquery-xpath-实战-爬取猫眼电影排行/",
+  owner: 'wardseptember',
+  repo: 'wardseptember.github.io',
+  oauth: {
+    client_id: 'cd04f15359635cf78db1',
+    client_secret: '0d9d7a78ef75c9188bc97b34f8d9364d3a52ce04',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -278,8 +362,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
