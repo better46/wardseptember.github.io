@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python爬虫主流存储类型(TXT,JSON,CSV,Mysql,Mongodb,Redis)实战 | wardseptember&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="@TOC 写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
+  <meta name="description" content="写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
 <meta name="keywords" content="python爬虫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python爬虫主流存储类型(TXT,JSON,CSV,Mysql,Mongodb,Redis)实战">
 <meta property="og:url" content="http://yoursite.com/2019/01/22/Python爬虫主流存储类型-TXT-JSON-CSV-Mysql-Mongodb-Redis-实战/index.html">
 <meta property="og:site_name" content="wardseptember&#39;s blog">
-<meta property="og:description" content="@TOC 写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
+<meta property="og:description" content="写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190121185946360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2019012119001873.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190121193542157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190121202255843.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190121202307655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-01-22T03:33:51.925Z">
+<meta property="og:updated_time" content="2019-01-22T03:36:04.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python爬虫主流存储类型(TXT,JSON,CSV,Mysql,Mongodb,Redis)实战">
-<meta name="twitter:description" content="@TOC 写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
+<meta name="twitter:description" content="写在前面上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。上篇链接">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190121185946360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhcmRzZXB0ZW1iZXI=,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="wardseptember&#39;s blog" type="application/atom+xml">
@@ -193,8 +193,7 @@
 		</div>
 	  
       
-        <p>@<a href="目录">TOC</a></p>
-<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/" target="_blank" rel="noopener">上篇链接</a><br><a id="more"></a></p>
+        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>上次写了python爬虫的各种主流解析库使用方法，这次是主流存储类型的实战。<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/" target="_blank" rel="noopener">上篇链接</a><br><a id="more"></a></p>
 <h1 id="一、目的"><a href="#一、目的" class="headerlink" title="一、目的"></a>一、目的</h1><p>这次依然是爬取猫眼电影排行榜，然后用将爬取到的数据分别存储为TXT,JSON,CSV或者分别存储在Mysql,Mongodb,Redis等数据库中。<br>这次操作和依赖技术相对复杂些，既要掌握基本sql语句，也要配置各种数据库环境。</p>
 <h1 id="二、实现"><a href="#二、实现" class="headerlink" title="二、实现"></a>二、实现</h1><h2 id="1-环境依赖"><a href="#1-环境依赖" class="headerlink" title="1. 环境依赖"></a>1. 环境依赖</h2><ul>
 <li>python3</li>
