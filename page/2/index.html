@@ -159,6 +159,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-插入排序-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/08/插入排序-python/">插入排序--python</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/08/插入排序-python/" class="archive-article-date">
+  	<time datetime="2018-08-08T13:58:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	  
+      
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(collection)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    插入排序</span></span><br><span class="line"><span class="string">    算法思想：</span></span><br><span class="line"><span class="string">    初始时，只考虑数组下标0处的元素，只有一个元素，显然是有序的。</span></span><br><span class="line"><span class="string">    然后第一趟 对下标 1 处的元素进行排序，保证数组[0,1]上的元素有序；</span></span><br><span class="line"><span class="string">    第二趟 对下标 2 处的元素进行排序，保证数组[0,2]上的元素有序；</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    .....</span></span><br><span class="line"><span class="string">    第N-1趟对下标 N-1 处的元素进行排序，保证数组[0,N-1]上的元素有序，也就是整个数组有序了。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Examples:</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([0, 5, 3, 2, 2])</span></span><br><span class="line"><span class="string">    [0, 2, 2, 3, 5]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([])</span></span><br><span class="line"><span class="string">    []</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; insertion_sort([-2, -5, -45])</span></span><br><span class="line"><span class="string">    [-45, -5, -2]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>, len(collection)):</span><br><span class="line">        <span class="keyword">while</span> <span class="number">0</span> &lt; index <span class="keyword">and</span> collection[index] &lt; collection[index - <span class="number">1</span>]:</span><br><span class="line">            collection[index], collection[</span><br><span class="line">                index - <span class="number">1</span>] = collection[index - <span class="number">1</span>], collection[index]</span><br><span class="line">            index -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> collection</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        raw_input          <span class="comment"># Python 2</span></span><br><span class="line">    <span class="keyword">except</span> NameError:</span><br><span class="line">        raw_input = input  <span class="comment"># Python 3</span></span><br><span class="line"></span><br><span class="line">    user_input = raw_input(<span class="string">'输入待排序的数，用\",\"分隔:\n'</span>).strip()</span><br><span class="line">    <span class="comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span></span><br><span class="line">    unsorted = [int(item) <span class="keyword">for</span> item <span class="keyword">in</span> user_input.split(<span class="string">','</span>)]</span><br><span class="line">    print(insertion_sort(unsorted))</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/08/08/插入排序-python/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+	  
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/08/插入排序-python/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-圈排序——python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -829,11 +907,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">笔记备份</a>
+                <a href="javascript:void(0)" class="js-tag color2">myblog</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">myblog</a>
+                <a href="javascript:void(0)" class="js-tag color5">笔记备份</a>
               </li>
             
             <div class="clearfix"></div>
